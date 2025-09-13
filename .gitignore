@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Angular build output
+/dist
+/tmp
+/out-tsc
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vscode/
+*.code-workspace
+
+# IDE - WebStorm
+.idea/
+
+# IDE - VSCode
+.vscode/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+#---- start project files ----
+/dialysis-app/**/.angular/*
+/dialysis-app/**/node_modules/*
+/frontend/.next
+
+# -- for ui --
+/dialysis-app-ui/node_modules/*
+/dialysis-app-ui/.angular/*
+/dialysis-app-ui/dist/*
+/dialysis-app-ui/backend/logs/*
+backend/logs
+/backend/backend.iml
+# -- for ui --
+/dialysis-app-ui/node_modules/*
+/dialysis-app-ui/.angular/*

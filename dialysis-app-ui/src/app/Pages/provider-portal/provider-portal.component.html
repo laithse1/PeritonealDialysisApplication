@@ -1,0 +1,44 @@
+<div class="d-flex flex-column vh-100">
+    <div class="flex-shrink-0">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div class="flex-grow-1 overflow-auto">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-md-6 d-flex flex-column p-3 h-100">
+                    <div class="card flex-grow-1 overflow-auto">
+                        <div class="card-body p-2 flex-grow-1 overflow-auto">
+                            <app-patient-list></app-patient-list>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column p-3 h-100">
+                    <div class="card flex-grow-1 overflow-auto">
+                        <div class="card-body p-3 flex-grow-1 overflow-auto">
+                            <p-tabView>
+                                <p-tabPanel header="notifications">
+                                    <app-notifications></app-notifications>
+                                </p-tabPanel>
+                                <p-tabPanel header="Dialysis Data">
+                                    <app-dialysis-measurements-graph></app-dialysis-measurements-graph>
+                                </p-tabPanel>
+                                <p-tabPanel header="Blood Pressure">
+                                    <app-blood-pressure></app-blood-pressure>
+                                </p-tabPanel>
+                                <p-tabPanel header="Weight">
+                                    <app-weight></app-weight>
+                                </p-tabPanel>
+                                <p-tabPanel header="Protein">
+                                    <app-protein></app-protein>
+                                </p-tabPanel>
+                                <p-tabPanel header="New Data">
+                                    <app-measurements></app-measurements>
+                                </p-tabPanel>
+                            </p-tabView>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
